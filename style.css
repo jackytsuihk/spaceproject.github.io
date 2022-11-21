@@ -22,7 +22,7 @@ td {border: solid 1px;
 }
 .tabletext table{ 
     width: 100%;
-    background-image: url("../include/Logo.jpg");
+    background-image: url("include/Logo.jpg");
     background-repeat: no-repeat;
     height: 184px;
 
