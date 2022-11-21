@@ -1,0 +1,171 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: gainsboro;
+    background-size: cover;
+}
+table{    border-collapse:collapse;
+    text-align: left;
+}
+td {border: solid 1px;
+
+
+    margin:0 auto;
+}
+.tabletext table{ 
+    width: 100%;
+    background-image: url("../include/Logo.jpg");
+    background-repeat: no-repeat;
+    height: 184px;
+
+}
+.tabletext td{ 
+    min-width: 184px;
+}
+
+.foottext table{
+    width: 100% ;
+    position: absolute;
+    bottom: 0%;
+
+}
+      
+
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid #33225c;
+    color: #33225c;
+    padding:5px;
+    font-size:18px;
+    cursor:pointer;
+    margin: 12px 0;
+}
+
+.loginBox{
+    border-radius:25px 25px 25px 25px ;
+    width: 280px;
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(19, 17, 17);
+    background-color: rgb(80, 134, 104);
+    padding-left: 2cm;
+    padding-right: 2cm;
+    padding-top: 0.1cm;
+    padding-bottom: 0.5cm;
+
+}
+
+.loginBox h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 5px solid #040b49;
+    margin-bottom: 30px;
+    padding: 13px 0;
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #442dac;
+}
+.loginBox input::placeholder{color:rgba(37, 25, 27, 0.466)}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(5, 4, 5);
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+html{ position: relative;
+min-height: 100%;
+}
+
+.grid-container {  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));}
+
+.grid-container {
+    height: 184px;
+    width:auto;
+    display: grid;
+    overflow: hidden ;
+    grid-template-areas: 
+
+      'left middle right' 
+   ;
+   grid-template-columns: 184px 5fr minmax(100px,1fr );
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  
+  .left{
+
+background-image: url("../include/Logo.jpg");
+background-repeat: no-repeat;
+;}
+
+  .middle,
+  .right {
+    padding: 0px;
+    margin:0px;
+    height: auto; /* Should be removed. Only for demonstration */
+    overflow: hidden ;
+  }
+  .middle H1{   
+
+    font-size: 44px;
+  
+    text-align: left;
+    
+    overflow: hidden ;
+
+left:230px;}
+
+  .right H3{
+
+    font-size: 20px;
+
+    text-align: left;
+    position: static;
+ 
+
+    overflow: hidden ;
+  }
+  /* Style the left column */
+  .left {
+    grid-area: left;
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+  }
+  
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  
+ 
