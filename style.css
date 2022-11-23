@@ -310,7 +310,7 @@ padding: 20px;
       'secondleft secondright secondright' 
       'bottom bottom bottom' 
    ;
-   grid-template-columns: 250px minmax(max-content, 90%) 15%;
+   grid-template-columns: 250px minmax(1370px, 90%) 15%;
    grid-template-rows: 80px minmax(max-content, 830px) 22px;
     /* grid-column-gap: 10px; - if you want gap between the columns */
   } 
