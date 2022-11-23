@@ -22,11 +22,7 @@ td {
   margin:0 auto;
 }
 
-.foottext table{
-  width: 100% ;
-  position: absolute;
-  bottom: 0%;
-}
+
       
 .btn{
   width: 100%;
@@ -43,9 +39,9 @@ td {
     border-radius:25px 25px 25px 25px ;
     width: 280px;
     border: 1px solid;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%,-50%);
     color: rgb(19, 17, 17);
     background-color: rgb(80, 134, 104);
@@ -98,54 +94,39 @@ html{
 }
 
 .grid-container {
-  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
-}
-
-.grid-container {
-    height: 184px;
-    width:auto;
+    
     display: grid;
     overflow: hidden ;
-    grid-template-areas: 
+    width: 100%;
+    grid-template: 
 
       'left middle right' 
+      'cde fgh fgh' 
+      'bottom bottom bottom' 
    ;
-   grid-template-columns: 184px 5fr minmax(100px,1fr );
+   grid-template-columns: 250px 5fr 1fr;
+   grid-template-rows: 80px 17fr 1fr;
     /* grid-column-gap: 10px; - if you want gap between the columns */
   } 
-  
-  .left{
-
+    .left{
 background-image: url("include/Logo.jpg");
 background-size: 100%;
-background-repeat: no-repeat;
-;}
-
+background-repeat: no-repeat;}
   .middle,
   .right {
     padding: 0px;
     margin:0px;
-    height: auto; /* Should be removed. Only for demonstration */
     overflow: hidden ;
   }
   .middle H1{   
-
-    font-size: 44px;
-  
+    font-size: 36px;
     text-align: left;
-    
     overflow: hidden ;
-
-left:230px;}
-
+}
   .right H3{
-
     font-size: 20px;
-
     text-align: left;
     position: static;
- 
-
     overflow: hidden ;
   }
   /* Style the left column */
@@ -163,4 +144,12 @@ left:230px;}
     grid-area: right;
   }
   
- 
+  .jacky {
+    grid-area: cde; 
+  }
+  .billy {
+    grid-area: fgh;
+     }
+  .bottom{
+    grid-area: bottom;
+  }
