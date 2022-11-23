@@ -140,7 +140,7 @@ html{
 padding: 20px;
   left: 10%;
   border:3px solid;
-
+ height: 750px;
   grid-template: 
     'hhh hhh hhh hhh hhh hhh'
     'aaa bbb ccc ddd eee fff' 
@@ -311,7 +311,7 @@ padding: 20px;
       'bottom bottom bottom' 
    ;
    grid-template-columns: 250px minmax(max-content, 90%) 15%;
-   grid-template-rows: 80px minmax(max-content, 800px) 22px;
+   grid-template-rows: 80px minmax(max-content, 830px) 22px;
     /* grid-column-gap: 10px; - if you want gap between the columns */
   } 
     .left  {
