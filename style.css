@@ -21,8 +21,34 @@ td {
   border: solid 1px;
   margin:0 auto;
 }
-
-
+.btn3{
+  border-radius:5px 5px 5px 5px ;
+  background: none;
+  background-color: #3f4f52;
+  border: 2px solid #37248a;
+  color: #d8d8d8b9;
+  padding:5px;
+  font-size:18px;
+  cursor:pointer;
+  margin: 12px 0;
+  position: absolute;
+  right: 2.3%;
+  top:86%;
+}
+.btn2{
+  border-radius:5px 5px 5px 5px ;
+  background: none;
+  background-color: #1b7e65;
+  border: 2px solid #37248a;
+  color: #d8d8d8;
+  padding:5px;
+  font-size:18px;
+  cursor:pointer;
+  margin: 12px 0;
+  position: absolute;
+  right: 13%;
+  top:86%;
+}
       
 .btn{
   width: 100%;
@@ -40,11 +66,12 @@ td {
     width: 280px;
     border: 1px solid;
     position: relative;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%,-50%);
+    top: 10%;
+    left:11%;
+    
+
     color: rgb(19, 17, 17);
-    background-color: rgb(80, 134, 104);
+    background-color: rgba(110, 85, 18, 0.452);
     padding-left: 2cm;
     padding-right: 2cm;
     padding-top: 0.1cm;
@@ -93,6 +120,176 @@ html{
   min-height: 100%;
 }
 
+
+.tableorder {
+  
+  display: grid;
+  overflow: hidden ;
+  text-align: center;
+  width:50%;
+  position: relative;
+padding: 20px;
+  left: 10%;
+  border:3px solid;
+
+  grid-template: 
+    'hhh hhh hhh hhh hhh hhh'
+    'aaa bbb ccc ddd eee fff' 
+    'aa ba ca da ea fa' 
+    'ab bb cb db eb fb' 
+    'ac bc cc dc ec fc' 
+    'ad bd cd dd ed fd' 
+    'ae be ce de ee fe' 
+    'xxx xxx xxx ef ef ff' 
+    'xxx xxx xxx eg eg fg' 
+    'xxx xxx xxx eh eh fh' 
+    'xxx xxx xxx ei ei fi' 
+ ;
+ grid-template-columns: 1fr 3fr 3fr 2fr 2fr 2fr;
+ grid-template-rows: 120px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+} 
+.hhh{
+  grid-area: hhh;border:none;
+  border-bottom: 1px solid;
+}
+.xxx{
+  grid-area: xxx;border:1px solid;border-left:2px solid;border-bottom: 2px solid;
+}
+  .left {
+    grid-area: left;
+  }
+  .aaa {
+    grid-area: aaa;border:1px solid;border:1px solid;border-left:2px solid;
+  }
+  .bbb {
+    grid-area: bbb;border:1px solid;
+  }
+  .ccc {
+    grid-area: ccc;border:1px solid;
+  }
+  .ddd {
+    grid-area: ddd;border:1px solid;
+  }
+  .eee {
+    grid-area: eee;border:1px solid;
+  }
+  .fff {
+    grid-area: fff;border:1px solid;border-right: 2px solid;
+  }
+  .aa {
+    grid-area: aa;border:1px solid;border-left:2px solid;
+  }
+  .ab {
+    grid-area: ab;border:1px solid;border-left:2px solid;
+  }
+  .ac {
+    grid-area: ac;border:1px solid;border-left:2px solid;
+  }  
+  .ad {
+    grid-area: ad;border:1px solid;border-left:2px solid;
+  }
+  .ae {
+    grid-area: ae;border:1px solid;border-left:2px solid;
+  }
+  .ba {
+    grid-area: ba;border:1px solid;
+  }
+  .bb {
+    grid-area: bb;border:1px solid;
+  }
+  .bc {
+    grid-area: bc;border:1px solid;
+  }
+  .bd {
+    grid-area: bd;border:1px solid;
+  }
+  .be {
+    grid-area: be;border:1px solid;
+  }
+  .ca {
+    grid-area: ca;border:1px solid;
+  }
+  .cb {
+    grid-area: cb;border:1px solid;
+  }
+  .cc {
+    grid-area: cc;border:1px solid;
+  }
+  .cd {
+    grid-area: cd;border:1px solid;
+  }
+  .ce {
+    grid-area: ce;border:1px solid;
+  }
+  .da {
+    grid-area: da;border:1px solid;
+  }
+  .db {
+    grid-area: db;border:1px solid;
+  }
+  .dc {
+    grid-area: dc;border:1px solid;
+  }
+  .dd {
+    grid-area: dd;border:1px solid;
+  }
+  .de {
+    grid-area: de;border:1px solid;
+  }
+  .ea {
+    grid-area: ea;border:1px solid;
+  }
+  .eb {
+    grid-area: eb;border:1px solid;
+  }
+  .ec {
+    grid-area: ec;border:1px solid;
+  }
+  .ed {
+    grid-area: ed;border:1px solid;
+  }
+  .ee {
+    grid-area: ee;border:1px solid;
+  }
+  .ef {
+    grid-area: ef;border:1px solid;
+  }
+  .eg {
+    grid-area: eg;border:1px solid;
+  }
+  .eh {
+    grid-area: eh;border:1px solid;
+  }
+  .ei {
+    grid-area: ei;border:1px solid;border-bottom: 2px solid;
+  }  
+  .fa {
+    grid-area: fa;border:1px solid;border-right: 2px solid;
+  }
+  .fb {
+    grid-area: fb;border:1px solid;border-right: 2px solid;
+  }
+  .fc {
+    grid-area: fc;border:1px solid;border-right: 2px solid;
+  }
+  .fd {
+    grid-area: fd;border:1px solid;border-right: 2px solid;
+  }
+  .fe {
+    grid-area: fe;border:1px solid;border-right: 2px solid;
+  }
+  .ff {
+    grid-area: ff;border:1px solid;border-right: 2px solid;
+  }
+  .fg {
+    grid-area: fg;border:1px solid;border-right: 2px solid;
+  }
+  .fh {
+    grid-area: fh;border:1px solid;border-right: 2px solid;
+  }
+  .fi {
+    grid-area: fi;border:1px solid;border-bottom: 2px solid;border-right: 2px solid;
+  }
 .grid-container {
     
     display: grid;
@@ -101,11 +298,11 @@ html{
     grid-template: 
 
       'left middle right' 
-      'cde fgh fgh' 
+      'secondleft secondright secondright' 
       'bottom bottom bottom' 
    ;
-   grid-template-columns: 250px 5fr 1fr;
-   grid-template-rows: 80px 17fr 1fr;
+   grid-template-columns: 250px minmax(max-content, 90%) 15%;
+   grid-template-rows: 80px minmax(max-content, 800px) 22px;
     /* grid-column-gap: 10px; - if you want gap between the columns */
   } 
     .left{
@@ -144,12 +341,21 @@ background-repeat: no-repeat;}
     grid-area: right;
   }
   
-  .jacky {
-    grid-area: cde; 
+  .secondleft {
+    grid-area: secondleft; 
   }
-  .billy {
-    grid-area: fgh;
-     }
+  .secondright {
+    grid-area: secondright; 
+
+}
   .bottom{
     grid-area: bottom;
+
+  }  
+  .bottom table{
+  width: 100%;
+  border: 1px solid;
+  margin: 0;
+  padding: 0;
+  border-collapse:collapse;
   }
