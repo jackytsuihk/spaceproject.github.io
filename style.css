@@ -51,7 +51,7 @@ td {
 }
       
 .btn{
-  width: 100%;
+  width: 55%;
   background: none;
   border: 2px solid #33225c;
   color: #33225c;
@@ -60,7 +60,16 @@ td {
   cursor:pointer;
   margin: 12px 0;
 }
-
+.btn4{
+  width: 42%;
+  background: none;
+  border: 2px solid #33225c;
+  color: #33225c;
+  padding:5px;
+  font-size:18px;
+  cursor:pointer;
+  margin: 12px 0;
+}
 .loginBox{
     border-radius:25px 25px 25px 25px ;
     width: 280px;
@@ -305,16 +314,28 @@ padding: 20px;
    grid-template-rows: 80px minmax(max-content, 800px) 22px;
     /* grid-column-gap: 10px; - if you want gap between the columns */
   } 
-    .left{
+    .left  {
 background-image: url("include/Logo.jpg");
 background-size: 100%;
 background-repeat: no-repeat;}
-  .middle,
-  .right {
+
+  .middle{
+    background-image: url("include/Banner.jpg");
+background-size: 100%;
+background-repeat: no-repeat;
     padding: 0px;
     margin:0px;
     overflow: hidden ;
   }
+
+  .right {
+background-size: 100%;
+background-color: #3f4f52;
+    padding: 0px;
+    margin:0px;
+    overflow: hidden ;
+  }
+
   .middle H1{   
     font-size: 36px;
     text-align: left;
