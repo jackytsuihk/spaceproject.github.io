@@ -12,42 +12,31 @@ body{
     background-color: gainsboro;
     background-size: cover;
 }
-table{    border-collapse:collapse;
-    text-align: left;
+table{
+  border-collapse:collapse;
+  text-align: left;
 }
-td {border: solid 1px;
 
-
-    margin:0 auto;
-}
-.tabletext table{ 
-    width: 100%;
-    background-image: url("include/Logo.jpg");
-    background-repeat: no-repeat;
-    height: 184px;
-
-}
-.tabletext td{ 
-    min-width: 184px;
+td {
+  border: solid 1px;
+  margin:0 auto;
 }
 
 .foottext table{
-    width: 100% ;
-    position: absolute;
-    bottom: 0%;
-
+  width: 100% ;
+  position: absolute;
+  bottom: 0%;
 }
       
-
 .btn{
-    width: 100%;
-    background: none;
-    border: 2px solid #33225c;
-    color: #33225c;
-    padding:5px;
-    font-size:18px;
-    cursor:pointer;
-    margin: 12px 0;
+  width: 100%;
+  background: none;
+  border: 2px solid #33225c;
+  color: #33225c;
+  padding:5px;
+  font-size:18px;
+  cursor:pointer;
+  margin: 12px 0;
 }
 
 .loginBox{
@@ -83,7 +72,9 @@ td {border: solid 1px;
     margin: 8px 0;
     border-bottom: 1px solid #442dac;
 }
+
 .loginBox input::placeholder{color:rgba(37, 25, 27, 0.466)}
+
 .textbox input{
     border: none;
     outline: none;
@@ -101,11 +92,14 @@ td {border: solid 1px;
     text-align: center;
 }
 
-html{ position: relative;
-min-height: 100%;
+html{
+  position: relative;
+  min-height: 100%;
 }
 
-.grid-container {  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));}
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+}
 
 .grid-container {
     height: 184px;
@@ -122,7 +116,8 @@ min-height: 100%;
   
   .left{
 
-background-image: url("../include/Logo.jpg");
+background-image: url("include/Logo.jpg");
+background-size: 20%;
 background-repeat: no-repeat;
 ;}
 
