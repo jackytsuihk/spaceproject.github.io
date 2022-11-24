@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <title>Order Place</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <script src="OrderSystem/javascript.js"></script>
@@ -32,7 +32,8 @@
 <br>
 <br>
 
-                <div class="tableorder" style="background-color:rgba(36, 37, 124, 0.336);">  
+                <div id="tableorder" style="background-color:rgba(36, 37, 124, 0.336);">  
+          
                     <br>
                     <br>
                     <br>
@@ -66,45 +67,85 @@
                     <div class="ac">3</div>
                     <div class="ad">4</div>
                     <div class="ae">5</div>
-                    <div class="ba">1</div>
-                    <div class="bb">1</div>
-                    <div class="bc">1</div>
-                    <div class="bd">1</div>
-                    <div class="be">1</div>
-                    <div class="ca">1</div>
-                    <div class="cb">1</div>
-                    <div class="cc">1</div>
-                    <div class="cd">1</div>
-                    <div class="ce">1</div>
-                    <div class="da">1</div>
-                    <div class="db">1</div>
-                    <div class="dc">1</div>
-                    <div class="dd">1</div>
-                    <div class="de">1</div>
-                    <div class="ea">1</div>
-                    <div class="eb">1</div>
-                    <div class="ec">1</div>
-                    <div class="ed">1</div>
-                    <div class="ee">1</div>
+                    <div class="ba">Sushi</div>
+                    <div class="bb">Cake</div>
+                    <div class="bc">Soft Drink</div>
+                    <div class="bd">Sashimi</div>
+                    <div class="be">Shabu Shabu</div>
+                    <div class="ca">TBC</div>
+                    <div class="cb">TBC</div>
+                    <div class="cc">TBC</div>
+                    <div class="cd">TBC</div>
+                    <div class="ce">TBC</div>
+                    <div id="da">1</div>
+                    <div id="db">2</div>
+                    <div id="dc">3</div>
+                    <div id="dd">4</div>
+                    <div id="de">5</div>
+                    <div id="ea">6</div>
+                    <div id="eb">7</div>
+                    <div id="ec">8</div>
+                    <div id="ed">9</div>
+                    <div id="ee">10</div>
+
                     <div class="ef"><b>Sub-Total</b></div>
                     <div class="eg"><b>Discount</b></div>
                     <div class="eh"><b>Delivery Charges</b></div>
                     <div class="ei"><b>Grand Total</b></div>
-                    <div class="fa">1</div>
-                    <div class="fb">1</div>
-                    <div class="fc">3</div>
-                    <div class="fd">1</div>
-                    <div class="fe">1</div>
-                    <div class="ff">1</div>
-                    <div class="fg">1</div>
-                    <div class="fh">1</div>
-                    <div class="fi">1</div>
+                    <div id="fa">1</div>
+                    <div id="fb">1</div>
+                    <div id="fc">3</div>
+                    <div id="fd">1</div>
+                    <div id="fe">1</div>
+
+                    <div id="ff"> 
+                            </div>
+
+                    <div id="fg"></div>
+                    <div id="fh"></div>
+                    <div id="fi"></div>
 
 </div>
            </div>
 
 </div>
+<script>	
+document.getElementById("fa").innerHTML= parseFloat(document.getElementById("da").innerHTML)*parseFloat(document.getElementById("ea").innerHTML);
+document.getElementById("fb").innerHTML= parseFloat(document.getElementById("db").innerHTML)*parseFloat(document.getElementById("eb").innerHTML);
+document.getElementById("fc").innerHTML= parseFloat(document.getElementById("dc").innerHTML)*parseFloat(document.getElementById("ec").innerHTML);
+document.getElementById("fd").innerHTML= parseFloat(document.getElementById("dd").innerHTML)*parseFloat(document.getElementById("ed").innerHTML);
+document.getElementById("fe").innerHTML= parseFloat(document.getElementById("de").innerHTML)*parseFloat(document.getElementById("ee").innerHTML);
 
+
+    var sumVal = parseFloat(document.getElementById("fa").innerHTML)+ 
+    parseFloat(document.getElementById("fb").innerHTML)+ 
+    parseFloat(document.getElementById("fc").innerHTML)+ 
+    parseFloat(document.getElementById("fd").innerHTML)+ 
+    parseFloat(document.getElementById("fe").innerHTML);
+
+        document.getElementById("ff").innerHTML= sumVal;
+        document.getElementById("fg").innerHTML= sumVal*0.9;
+
+        var deliveryCharges = 0
+     if (sumVal < 1000){ deliveryCharges = document.getElementById("fh").innerHTML= 100;} 
+        else { deliveryCharges=document.getElementById("fh").innerHTML= 0;}
+
+        var granTotal = deliveryCharges + sumVal + sumVal*0.9;
+
+        document.getElementById("fi").innerHTML= granTotal;
+        </script>     
+
+ <!--want to know why this script is wrong.-->
+<script>	
+        var innertable = document.getElementById("tableorder");
+        var sumVal = 0;
+        for (var i=3; i<8; i++)
+        {
+            sumVal = sumVal + parseFloat(innertable.rows[i].cells[5].innerHTML);
+        }    
+            document.getElementById("ff").innerHTML= sumVal;
+</script>     
+ <!--want to know why this script is wrong.-->
 
 </body>
 </html>

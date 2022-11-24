@@ -130,7 +130,7 @@ html{
 }
 
 
-.tableorder {
+#tableorder {
   
   display: grid;
   overflow: hidden ;
@@ -230,37 +230,37 @@ padding: 20px;
   .ce {
     grid-area: ce;border:1px solid;
   }
-  .da {
+  #da {
     grid-area: da;border:1px solid;
   }
-  .db {
+  #db {
     grid-area: db;border:1px solid;
   }
-  .dc {
+  #dc {
     grid-area: dc;border:1px solid;
   }
-  .dd {
+  #dd {
     grid-area: dd;border:1px solid;
   }
-  .de {
+  #de {
     grid-area: de;border:1px solid;
   }
-  .ea {
+  #ea {
     grid-area: ea;border:1px solid;
   }
-  .eb {
+  #eb {
     grid-area: eb;border:1px solid;
   }
-  .ec {
+  #ec {
     grid-area: ec;border:1px solid;
   }
-  .ed {
+  #ed {
     grid-area: ed;border:1px solid;
   }
-  .ee {
+  #ee {
     grid-area: ee;border:1px solid;
   }
-  .ef {
+ .ef {
     grid-area: ef;border:1px solid;
   }
   .eg {
@@ -272,31 +272,31 @@ padding: 20px;
   .ei {
     grid-area: ei;border:1px solid;border-bottom: 2px solid;
   }  
-  .fa {
+  #fa {
     grid-area: fa;border:1px solid;border-right: 2px solid;
   }
-  .fb {
+  #fb {
     grid-area: fb;border:1px solid;border-right: 2px solid;
   }
-  .fc {
+  #fc {
     grid-area: fc;border:1px solid;border-right: 2px solid;
   }
-  .fd {
+  #fd {
     grid-area: fd;border:1px solid;border-right: 2px solid;
   }
-  .fe {
+  #fe {
     grid-area: fe;border:1px solid;border-right: 2px solid;
   }
-  .ff {
+  #ff {
     grid-area: ff;border:1px solid;border-right: 2px solid;
   }
-  .fg {
+  #fg {
     grid-area: fg;border:1px solid;border-right: 2px solid;
   }
-  .fh {
+  #fh {
     grid-area: fh;border:1px solid;border-right: 2px solid;
   }
-  .fi {
+  #fi {
     grid-area: fi;border:1px solid;border-bottom: 2px solid;border-right: 2px solid;
   }
 .grid-container {
@@ -311,7 +311,7 @@ padding: 20px;
       'bottom bottom bottom' 
    ;
    grid-template-columns: 250px minmax(1370px, 90%) 15%;
-   grid-template-rows: 80px minmax(max-content, 830px) 22px;
+   grid-template-rows: 80px minmax(max-content, 800px) 22px;
     /* grid-column-gap: 10px; - if you want gap between the columns */
   } 
     .left  {
