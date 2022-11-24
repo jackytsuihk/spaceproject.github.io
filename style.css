@@ -1,5 +1,11 @@
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
+
+
+.left {
+  grid-area: left;
+  }
+
 img {
     max-width: 100%;
     height: auto;
@@ -46,7 +52,7 @@ td {
   cursor:pointer;
   margin: 12px 0;
   position: absolute;
-  right: 13%;
+  right: 20%;
   top:86%;
 }
       
@@ -56,9 +62,9 @@ td {
   border: 2px solid #33225c;
   color: #33225c;
   padding:5px;
-  font-size:18px;
+  font-size:14px;
   cursor:pointer;
-  margin: 12px 0;
+  margin: 6px 0;
 }
 .btn4{
   width: 42%;
@@ -66,23 +72,20 @@ td {
   border: 2px solid #33225c;
   color: #33225c;
   padding:5px;
-  font-size:18px;
+  font-size:14px;
   cursor:pointer;
   margin: 12px 0;
 }
 .loginBox{
     border-radius:25px 25px 25px 25px ;
-    width: 280px;
+    width: 100%;
     border: 1px solid;
     position: relative;
     top: 10%;
-    left:11%;
-    
-
     color: rgb(19, 17, 17);
     background-color: rgba(110, 85, 18, 0.452);
-    padding-left: 2cm;
-    padding-right: 2cm;
+    padding-left: 1.3cm;
+    padding-right: 1.3cm;
     padding-top: 0.1cm;
     padding-bottom: 0.5cm;
 
@@ -92,7 +95,7 @@ td {
     float: left;
     font-size: 40px;
     border-bottom: 5px solid #040b49;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 13px 0;
 }
 
@@ -113,7 +116,7 @@ td {
     background: none;
     color: rgb(5, 4, 5);
     font-size: 18px;
-    width: 80%;
+    width: 60%;
     float: left;
     margin: 0 10px;
 }
@@ -127,6 +130,7 @@ td {
 html{
   position: relative;
   min-height: 100%;
+
 }
 
 
@@ -135,10 +139,10 @@ html{
   display: grid;
   overflow: hidden ;
   text-align: center;
-  width:50%;
+  width:35%;
   position: relative;
-padding: 20px;
-  left: 10%;
+padding: 25px;
+
   border:3px solid;
 
   grid-template: 
@@ -154,8 +158,8 @@ padding: 20px;
     'xxx xxx xxx eh eh fh' 
     'xxx xxx xxx ei ei fi' 
  ;
- grid-template-columns: 1fr 3fr 3fr 2fr 2fr 2fr;
- grid-template-rows: 120px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+ grid-template-columns: 1fr 3fr 1.5fr 1fr 1.5fr 1.5fr;
+ grid-template-rows: 120px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
 } 
 .hhh{
   grid-area: hhh;border:none;
@@ -164,9 +168,7 @@ padding: 20px;
 .xxx{
   grid-area: xxx;border:1px solid;border-left:2px solid;border-bottom: 2px solid;
 }
-  .left {
-    grid-area: left;
-  }
+
   .aaa {
     grid-area: aaa;border:1px solid;border:1px solid;border-left:2px solid;
   }
@@ -299,39 +301,29 @@ padding: 20px;
   #fi {
     grid-area: fi;border:1px solid;border-bottom: 2px solid;border-right: 2px solid;
   }
-.grid-container {
-    
-    display: grid;
-    overflow: hidden ;
-    width: 100%;
-    grid-template: 
 
-      'left middle right' 
-      'secondleft secondright secondright' 
-      'bottom bottom bottom' 
-   ;
-   grid-template-columns: 250px minmax(1370px, 90%) 15%;
-   grid-template-rows: 80px minmax(max-content, 800px) 22px;
-    /* grid-column-gap: 10px; - if you want gap between the columns */
-  } 
     .left  {
 background-image: url("include/Logo.jpg");
 background-size: 100%;
+width:100%;
+height:220px;
 background-repeat: no-repeat;}
 
   .middle{
     background-image: url("include/Banner.jpg");
-background-size: 100%;
+height: 100%;
+width:100%;
 background-repeat: no-repeat;
-height: 80px;
-    padding: 0px;
-    margin:0px;
-    overflow: hidden ;
+background-size:cover;
+overflow: hidden;
+
   }
 
   .right {
-background-size: 100%;
-background-color: #3f4f52;
+    width:100%;
+    height: 78px;;
+background-size: cover;
+background-color: #3f4f52; 
     padding: 0px;
     margin:0px;
     overflow: hidden ;
@@ -369,15 +361,77 @@ background-color: #3f4f52;
   .secondright {
     grid-area: secondright; 
 
+
 }
   .bottom{
     grid-area: bottom;
+height: fit-content;
 
   }  
   .bottom table{
-  width: 100%;
+    width: 100%;
   border: 1px solid;
   margin: 0;
   padding: 0;
   border-collapse:collapse;
+
   }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @media only screen and (max-width: 770px){.left {width:min-content;height: min-content;}}
+  @media only screen and (max-width: 770px){.middle {display:block;}}
+  @media only screen and (max-width: 770px){.middle {display:none;}}
+  @media only screen and (max-width: 770px){.right {font-size:10px;height:auto;}}
+  @media only screen and (max-width: 770px){.right br{font-size: 10px;}}
+  @media only screen and (max-width: 770px){.secondleft {width:100%;height:100%;font-size:10px;}}
+  @media only screen and (max-width: 770px){.secondleft br{display:none;}}
+
+  @media only screen and (max-width: 770px){.secondright {width:100%;height:fit-content;font-size:10px;}}
+  @media only screen and (max-width: 770px){.secondright br{display:none;}}
+  @media only screen and (max-width: 770px){#tableorder {width:fit-content;height:fit-content;font-size:10px;}}
+  @media only screen and (max-width: 770px){#tableorder div{font-size-adjust:unset;}}
+  @media only screen and (max-width: 770px){#tableorder br{display:none;}}
+  @media only screen and (max-width: 770px){#tableorder br{display:block;}}
+  @media only screen and (max-width: 770px){.bottom {width:100%;font-size:10px;}} 
+  @media only screen and (max-width: 770px){.btn2 {width:20%;left: 45%;font-size: 10px;}} 
+  @media only screen and (max-width: 770px){.btn3 {width:20%;left: 70%;font-size: 10px;}} 
+
+  @media only screen and (min-width: 770px){#tableorder {left: 12%;}}
+  @media only screen and (min-width: 770px){.loginBox {left: 11%;}}
+  @media only screen and (min-width: 770px){.loginBox {width: 30%;font-size: 10px;}}
+  .grid-container {
+    
+    display: grid;
+    overflow: hidden ;
+    width: 100%;
+
+    grid-template: 
+
+      'left middle right' 
+      'secondleft secondright secondright' 
+      'bottom bottom bottom' 
+   ;
+   grid-template-columns: 220px minmax(470px,85%) minmax(170px,15%);
+   grid-template-rows: 78px minmax(830px,85%) auto;
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  @media only screen and (max-width: 770px){.grid-container {display:grid;
+    grid-template: 
+    'left'
+    'right' 
+    'secondleft'
+    'secondright'
+    'bottom' 
+   
+  }
+
+
+} 
+  
+  .grid-container::after {
+    content: "";
+    clear: both;
+    display: table;}
