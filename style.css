@@ -381,7 +381,7 @@ height: fit-content;
     box-sizing: border-box;
   }
   /* mobile adjustment*/
-  @media only screen and (max-width: 770px){.left {width: 100%;min-height: max-content;}}
+  @media only screen and (max-width: 770px){.left {width: 100%;max-height: 130px;overflow:hidden;}}
   @media only screen and (max-width: 770px){.middle {display:block;}}
   @media only screen and (max-width: 770px){.middle {display:none;}}
   @media only screen and (max-width: 770px){.right {font-size:10px;height:auto;}}
