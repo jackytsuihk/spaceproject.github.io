@@ -441,7 +441,7 @@ height: fit-content;
   @media only screen and (max-width: 770px){.loginBox h1 {font-size: 20px;}}
   @media only screen and (max-width: 770px){.loginBox {TOP:10%; width: 90%;left: 5%;}}
   @media only screen and (max-width: 770px){#desktoponly {display:none;}}
-  
+
 
   /* Desktop adjustment*/
   @media only screen and (min-width: 770px){#tableorder {left: 32%;}}
@@ -450,8 +450,9 @@ height: fit-content;
   @media only screen and (min-width: 770px){#mobileonly {display:none;}}
   @media only screen and (min-width: 770px){#specialAnnouncement2 {display:none;}}
   @media only screen and (min-width: 770px){#desktoponly table{width: 85%;margin-left: 9%;}}
+  @media only screen and (min-width: 770px){#mooncakepromotion {width: 50%;;margin-left:10%;}}
 
- 
+  #mooncakepromotion td{border:none;}
 
 
 
