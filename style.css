@@ -86,12 +86,14 @@ td {
     background-color: rgba(110, 85, 18, 0.452);
     padding-left: 1.3cm;
     padding-right: 1.3cm;
-    padding-top: 0.1cm;
-    padding-bottom: 0.5cm;
+    padding-top: 1.1cm;
+    padding-bottom: 1.5cm;
+    white-space: nowrap;
 
 }
 
 .loginBox h1{
+  white-space: nowrap;
     float: left;
     font-size: 40px;
     border-bottom: 5px solid #040b49;
@@ -100,6 +102,7 @@ td {
 }
 
 .textbox{
+  white-space: nowrap;
     width: 100%;
     overflow: hidden;
     font-size: 20px;
@@ -132,16 +135,25 @@ html{
   min-height: 100%;
 
 }
+#tableorder td{
 
+  font-size-adjust:unset;}
 
+#tableorder table{
+
+  width: 100%;
+}
 #tableorder {
-  
+  white-space: nowrap;
   display: grid;
-  overflow: hidden ;
+  overflow: visible ;
   text-align: center;
-  width:35%;
-  position: relative;
-padding: 25px;
+
+  max-width: 1000px;
+  height: 60%;
+  position: absolute;
+  padding: 25px;
+  min-width: 350px;
 
   border:3px solid;
 
@@ -302,12 +314,13 @@ padding: 25px;
     grid-area: fi;border:1px solid;border-bottom: 2px solid;border-right: 2px solid;
   }
 
-    .left  {
-background-image: url("include/Logo.jpg");
-background-size: 100%;
-max-width:100%;
-height:auto;
-background-repeat: no-repeat;}
+
+  .left  {
+
+    background-color:#efe3af;
+
+}
+
 
   .middle{
     background-image: url("include/Banner.jpg");
@@ -316,6 +329,7 @@ width:100%;
 background-repeat: no-repeat;
 background-size:cover;
 overflow: hidden;
+background-color:#efe3af;
 
   }
 
@@ -323,7 +337,7 @@ overflow: hidden;
     width:100%;
     height: 78px;;
 background-size: cover;
-background-color: #3f4f52; 
+background-color: #efe3af; 
     padding: 0px;
     margin:0px;
     overflow: hidden ;
@@ -357,7 +371,20 @@ background-color: #3f4f52;
   
   .secondleft {
     grid-area: secondleft; 
+    white-space: nowrap;
   }
+  .secondleft table{
+   
+   border: none;
+
+  }
+  .secondleft td{
+    padding-right: 200px;
+
+    border: none;
+    font-size: large;
+   }
+ 
   .secondright {
     grid-area: secondright; 
 
@@ -390,24 +417,43 @@ height: fit-content;
     } }
   @media only screen and (max-width: 770px){.middle {display:block;}}
   @media only screen and (max-width: 770px){.middle {display:none;}}
-  @media only screen and (max-width: 770px){.right {font-size:10px;height:auto;}}
-  @media only screen and (max-width: 770px){.right br{font-size: 10px;}}
-  @media only screen and (max-width: 770px){.secondleft {width:100%;height:100%;font-size:10px;}}
-  @media only screen and (max-width: 770px){.secondleft br{display:none;}}
-  @media only screen and (max-width: 770px){.secondright {width:100%;height:fit-content;font-size:10px;}}
+  @media only screen and (max-width: 770px){.right b{display:none;}}
+  @media only screen and (max-width: 770px){.right i{font-size:20px;}}
+  @media only screen and (max-width: 770px){.right {height:  100%;}}
+
+  @media only screen and (max-width: 770px){#tableorder {
+    white-space: nowrap;
+    TOP: 5%;
+    text-align: center;
+    width:100%;height:fit-content;font-size:10px;
+    position: relative;
+    padding:15px;}}
+  @media only screen and (max-width: 770px){.secondright {width:100%;height:100%;font-size:10px;}}
+
   @media only screen and (max-width: 770px){.secondright br{display:none;}}
-  @media only screen and (max-width: 770px){#tableorder {width:fit-content;height:fit-content;font-size:10px;}}
+
   @media only screen and (max-width: 770px){#tableorder div{font-size-adjust:unset;}}
-  @media only screen and (max-width: 770px){#tableorder br{display:none;}}
+
   @media only screen and (max-width: 770px){#tableorder br{display:block;}}
   @media only screen and (max-width: 770px){.bottom {width:100%;font-size:10px;}} 
   @media only screen and (max-width: 770px){.btn2 {width:20%;left: 45%;font-size: 10px;}} 
   @media only screen and (max-width: 770px){.btn3 {width:20%;left: 70%;font-size: 10px;}} 
   @media only screen and (max-width: 770px){.loginBox h1 {font-size: 20px;}}
+  @media only screen and (max-width: 770px){.loginBox {TOP:10%; width: 90%;left: 5%;}}
+  @media only screen and (max-width: 770px){#desktoponly {display:none;}}
+  
+
   /* Desktop adjustment*/
-  @media only screen and (min-width: 770px){#tableorder {left: 12%;}}
-  @media only screen and (min-width: 770px){.loginBox {left: 11%; top: 10%;}}
+  @media only screen and (min-width: 770px){#tableorder {left: 32%;}}
+  @media only screen and (min-width: 770px){.loginBox {left: 35%; top: 10%;}}
   @media only screen and (min-width: 770px){.loginBox {width: 30%;font-size: 10px;}}
+  @media only screen and (min-width: 770px){#mobileonly {display:none;}}
+  @media only screen and (min-width: 770px){#specialAnnouncement2 {display:none;}}
+  @media only screen and (min-width: 770px){#desktoponly table{width: 85%;margin-left: 9%;}}
+
+ 
+
+
 
   .grid-container {
     
@@ -418,27 +464,111 @@ height: fit-content;
     grid-template: 
 
       'left middle right' 
-      'secondleft secondright secondright' 
+      'secondleft secondleft secondleft' 
+      'secondright secondright secondright' 
       'bottom bottom bottom' 
    ;
    grid-template-columns: 220px minmax(470px,85%) minmax(170px,15%);
-   grid-template-rows: 78px minmax(830px,85%) auto;
+   grid-template-rows: 78px  auto minmax(830px,85%) auto;
     /* grid-column-gap: 10px; - if you want gap between the columns */
   } 
   @media only screen and (max-width: 770px){.grid-container {display:grid;
     grid-template: 
-    'left'
-    'right' 
-    'secondleft'
-    'secondright'
-    'bottom' 
-   
+    ' secondleft  left right  '
+    'secondright secondright secondright'
+    'bottom bottom bottom' 
+    ;
+    grid-template-columns: 0.5fr 5fr 0.8fr;
+    grid-template-rows: auto minmax(500px,auto) auto;
   }
-
-
 } 
-  
+.right{line-height: 20px;}
+
   .grid-container::after {
     content: "";
     clear: both;
     display: table;}
+
+
+
+    #specialAnnouncement {
+			position: relative;
+			width: 100%;
+      height: 20px;
+			padding: 4px;
+      font-size: small;
+			overflow: hidden;
+			background-color: orange;
+	
+	
+		}
+    #specialAnnouncement2 {
+			position: relative;
+			width: 100%;
+      height: 20px;
+			padding: 4px;
+      font-size: small;
+			overflow: hidden;
+			background-color: orange;
+	
+	
+		}
+    
+
+.menucontainer {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+
+.menucontainer:hover, .menucontainer:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius:10px 10px 10px 10px ;
+  display: none;
+  position: absolute;
+  background-color:rgb(231, 227, 238);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+ 
+}
+
+.dropdown-content a {
+  color: black;
+  
+  font-size: bold,small;
+  text-decoration: none;
+  width: 200px;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}

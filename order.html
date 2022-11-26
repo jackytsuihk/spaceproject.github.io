@@ -1,150 +1,213 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+
+<head >
     <meta charset="UTF-8">
     <title>Order Place</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="OrderSystem/javascript.js"></script>
+    <link rel="stylesheet" href="menustyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
 
-    <script src="OrderSystem/javascript.js"></script>
+<body onload="postAnnoucement();postAnnoucement2()">
+
+
     <div class="grid-container">
-<div class="left"></div>
+        <div class="left" style= background-color:#efe3af;><a href="index.html"><img src="include/Logo.jpg" ></a></div>
         <div class="col-s-0">
-        <div class="middle" style="background-color:rgba(165, 127, 21, 0.295);"><H1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</H1></div>  </div>
- 
-        <div class="right" style="background-color:rgba(165, 127, 21, 0.295);">
-            <H5> &nbsp&nbsp&nbsp<a href="cart.html"><i class="fa fa-cart-arrow-down" ></i>&nbsp&nbsp&nbsp Cart</a></H5>
-            <H5> &nbsp&nbsp&nbsp<a href="login.html">       <i class="fas fa-user"></i>&nbsp&nbsp&nbspSign In / {Username}</a></H5></div>
-      
+            <div class="middle" style="background-color:#efe3af;">
+                <H1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</H1>
+            </div>
+        </div>
+
+        <div class="right" style="background-color:#efe3af;">
+            <br>
+
+            <span>&nbsp&nbsp<a href="login.html"><i class="fas fa-user"></i></a></span>
+            <span>
+                <b> &nbsp&nbsp&nbsp<a href="login.html">Sign In / {Username}</a></b>
+            </span>
+            <div>
+            <span>&nbsp<a href="cart.html"><i class="fa fa-cart-arrow-down"></i></a></span>
+            <span>          
+
+                <b>&nbsp&nbsp&nbsp<a href="cart.html">Cart</a></b>
+            </span>
+            <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>                 <input type="button" class="language" value="EN">
+        
+        </div>
+        </div>
+
 
 
         <div class="bottom" style="background-color:rgb(194, 156, 30);">
-          <table><tr><td><h7>&nbsp&nbsp&#169;	Copyright line</h7></td></tr></table> 
-    </table>
+            <table>
+                <tr>
+                    <td>
+                        <h7>&nbsp&nbsp&#169; Copyright line</h7>
+                    </td>
+                </tr>
+            </table>
+            </table>
+        </div>
+
+        <div class="secondleft" id="desktoponly" style="background-color:#efe3af; text-align: center;">
+          <b>
+            <div id="specialAnnouncement">
+            </div>
+          </b>
+
+          <table>
+              <tr>
+                <td><b><a href="aboutus.html">About Us</b></a></td>
+                <td><b><a href="promotion.html">Latest Promotion</b></a></td>
+                <td><b><a href="menu.html">Food Menu</b> </a> </td>
+                <td><b><a href="order.html">Check Placed Order</b></a></td>
+                <td><b><a href="contactus.html">Contact Us</b> </a></td>
+            </tr>
+        </table>
+
     </div>
-   
-    <div class="secondleft" style="background-color:rgba(255, 230, 0, 0.37); text-align: center;"> 
-        <div><br> <b>About Us</b>    <br><br> </div>
-        <div> <b>Latest Promotion</b>      <br><br></div>
-        <b><a href="menu.html">Food Menu</b>  </a>     <br><br>
-        <div> <b><a href="order.html">Check Place Order</b></a>       <br><br></div>
-            <div><b>Contact Us</b>      </div>
-    </div>
+    <div class="secondleft" id="mobileonly"
+        style="background-color:#efe3af; text-align: center;">
 
-        <div class="secondright" style="background-color:rgba(255, 230, 0, 0.37);">  
 <br>
-<br>
+        <div class="dropdown">
+            <div class="menucontainer" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <br>
+                <div><b><a href="aboutus.html">About Us</b></a></div><br>
+                <div><b><a href="promotion.html">Latest Promotion</b></a></div><br>
+                <div> <b><a href="menu.html">Food Menu</b> </a> </div><br>
+                <div><b><a href="order.html">Check Placed Order</b></a></div><br>
+                <div><b><a href="contactus.html">Contact Us</b></a> </div><br>
+              </div>
+          </div>
 
-                <div id="tableorder" style="background-color:rgba(36, 37, 124, 0.336);">  
-                    <br>
+      </div>
 
-                    <div class="hhh"><b><h2>Place Order</h2></b>
-
-
-                        <p id="p1" style="text-align: left;"></p>
-                        <script>	var date = new Date();
-                            var current_date = "<b>Date: </b>"+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-                            document.getElementById("p1").innerHTML = current_date;
-                            </script>
-       
-
-                    </div>
-                    <div class="xxx"><b><p> </p></b></div>
-                    <div class="aaa"><b>Item</b></div>
-                    <div class="bbb"><b>Desciption</b></div>
-                    <div class="ccc"><b>Picture</b></div>
-                    <div class="ddd"><b>Qty</b></div>
-                    <div class="eee"><b>Price</b></div>
-                    <div class="fff"><b>Amount</b></div>
-                    <div class="aa">1</div>
-                    <div class="ab">2</div>
-                    <div class="ac">3</div>
-                    <div class="ad">4</div>
-                    <div class="ae">5</div>
-                    <div class="ba">Sushi</div>
-                    <div class="bb">Cake</div>
-                    <div class="bc">Soft Drink</div>
-                    <div class="bd">Sashimi</div>
-                    <div class="be">Shabu Shabu</div>
-                    <div class="ca">TBC</div>
-                    <div class="cb">TBC</div>
-                    <div class="cc">TBC</div>
-                    <div class="cd">TBC</div>
-                    <div class="ce">TBC</div>
-                    <div id="da">1</div>
-                    <div id="db">2</div>
-                    <div id="dc">3</div>
-                    <div id="dd">4</div>
-                    <div id="de">5</div>
-                    <div id="ea">6</div>
-                    <div id="eb">7</div>
-                    <div id="ec">8</div>
-                    <div id="ed">9</div>
-                    <div id="ee">10</div>
-
-                    <div class="ef"><b>Sub-Total</b></div>
-                    <div class="eg"><b>Discount</b></div>
-                    <div class="eh"><b>Delivery Charges</b></div>
-                    <div class="ei"><b>Grand Total</b></div>
-                    <div id="fa">1</div>
-                    <div id="fb">1</div>
-                    <div id="fc">3</div>
-                    <div id="fd">1</div>
-                    <div id="fe">1</div>
-
-                    <div id="ff"> 
-                            </div>
-
-                    <div id="fg"></div>
-                    <div id="fh"></div>
-                    <div id="fi"></div>
+        <div class="secondright" style="background-color:rgba(255, 230, 0, 0.37);">
+            <br>
+            <br>
+            <div id="specialAnnouncement2"></div>
 
 
+            <div id="tableorder" style="background-color:rgba(36, 37, 124, 0.336);">
+                <br>
+
+                <div class="hhh"><b>
+                        <h2>Placed Order</h2>
+                    </b>
 
 
-</div>
-<script>	
-document.getElementById("fa").innerHTML= parseFloat(document.getElementById("da").innerHTML)*parseFloat(document.getElementById("ea").innerHTML);
-document.getElementById("fb").innerHTML= parseFloat(document.getElementById("db").innerHTML)*parseFloat(document.getElementById("eb").innerHTML);
-document.getElementById("fc").innerHTML= parseFloat(document.getElementById("dc").innerHTML)*parseFloat(document.getElementById("ec").innerHTML);
-document.getElementById("fd").innerHTML= parseFloat(document.getElementById("dd").innerHTML)*parseFloat(document.getElementById("ed").innerHTML);
-document.getElementById("fe").innerHTML= parseFloat(document.getElementById("de").innerHTML)*parseFloat(document.getElementById("ee").innerHTML);
+                    <p id="p1" style="text-align: left;"></p>
+                    <script>	var date = new Date();
+                        var current_date = "<b>Date: </b>" + date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+                        document.getElementById("p1").innerHTML = current_date;
+                    </script>
 
 
-    var sumVal = parseFloat(document.getElementById("fa").innerHTML)+ 
-    parseFloat(document.getElementById("fb").innerHTML)+ 
-    parseFloat(document.getElementById("fc").innerHTML)+ 
-    parseFloat(document.getElementById("fd").innerHTML)+ 
-    parseFloat(document.getElementById("fe").innerHTML);
+                </div>
+                <div class="xxx"><b>
+                        <p> </p>
+                    </b></div>
+                <div class="aaa"><b>Item</b></div>
+                <div class="bbb"><b>Desciption</b></div>
+                <div class="ccc"><b>Picture</b></div>
+                <div class="ddd"><b>Qty</b></div>
+                <div class="eee"><b>Price</b></div>
+                <div class="fff"><b>Amount</b></div>
+                <div class="aa">1</div>
+                <div class="ab">2</div>
+                <div class="ac">3</div>
+                <div class="ad">4</div>
+                <div class="ae">5</div>
+                <div class="ba">Sushi</div>
+                <div class="bb">Cake</div>
+                <div class="bc">Soft Drink</div>
+                <div class="bd">Sashimi</div>
+                <div class="be">Shabu Shabu</div>
+                <div class="ca">TBC</div>
+                <div class="cb">TBC</div>
+                <div class="cc">TBC</div>
+                <div class="cd">TBC</div>
+                <div class="ce">TBC</div>
+                <div id="da">1</div>
+                <div id="db">2</div>
+                <div id="dc">3</div>
+                <div id="dd">4</div>
+                <div id="de">5</div>
+                <div id="ea">6</div>
+                <div id="eb">7</div>
+                <div id="ec">8</div>
+                <div id="ed">9</div>
+                <div id="ee">10</div>
 
-        document.getElementById("ff").innerHTML= sumVal;
-        document.getElementById("fg").innerHTML= sumVal*0.9;
+                <div class="ef"><b>Sub-Total</b></div>
+                <div class="eg"><b>Discount</b></div>
+                <div class="eh"><b>Delivery Charges</b></div>
+                <div class="ei"><b>Grand Total</b></div>
+                <div id="fa">1</div>
+                <div id="fb">1</div>
+                <div id="fc">3</div>
+                <div id="fd">1</div>
+                <div id="fe">1</div>
 
-        var deliveryCharges = 0
-     if (sumVal < 1000){ deliveryCharges = document.getElementById("fh").innerHTML= 100;} 
-        else { deliveryCharges=document.getElementById("fh").innerHTML= 0;}
+                <div id="ff">
+                </div>
 
-        var granTotal = deliveryCharges + sumVal + sumVal*0.9;
+                <div id="fg"></div>
+                <div id="fh"></div>
+                <div id="fi"></div>
 
-        document.getElementById("fi").innerHTML= granTotal;
-        </script>     
 
- <!--want to know why this script is wrong.-->
-<script>	
-        var innertable = document.getElementById("tableorder");
-        var sumVal = 0;
-        for (var i=3; i<8; i++)
-        {
-            sumVal = sumVal + parseFloat(innertable.rows[i].cells[5].innerHTML);
-        }    
-            document.getElementById("ff").innerHTML= sumVal;
-</script>     
- <!--want to know why this script is wrong.-->
+
+
+            </div>
+            <script>
+                document.getElementById("fa").innerHTML = parseFloat(document.getElementById("da").innerHTML) * parseFloat(document.getElementById("ea").innerHTML);
+                document.getElementById("fb").innerHTML = parseFloat(document.getElementById("db").innerHTML) * parseFloat(document.getElementById("eb").innerHTML);
+                document.getElementById("fc").innerHTML = parseFloat(document.getElementById("dc").innerHTML) * parseFloat(document.getElementById("ec").innerHTML);
+                document.getElementById("fd").innerHTML = parseFloat(document.getElementById("dd").innerHTML) * parseFloat(document.getElementById("ed").innerHTML);
+                document.getElementById("fe").innerHTML = parseFloat(document.getElementById("de").innerHTML) * parseFloat(document.getElementById("ee").innerHTML);
+
+
+                var sumVal = parseFloat(document.getElementById("fa").innerHTML) +
+                    parseFloat(document.getElementById("fb").innerHTML) +
+                    parseFloat(document.getElementById("fc").innerHTML) +
+                    parseFloat(document.getElementById("fd").innerHTML) +
+                    parseFloat(document.getElementById("fe").innerHTML);
+
+                document.getElementById("ff").innerHTML = sumVal;
+                document.getElementById("fg").innerHTML = sumVal * 0.9;
+
+                var deliveryCharges = 0
+                if (sumVal < 1000) { deliveryCharges = document.getElementById("fh").innerHTML = 100; }
+                else { deliveryCharges = document.getElementById("fh").innerHTML = 0; }
+
+                var granTotal = deliveryCharges + sumVal + sumVal * 0.9;
+
+                document.getElementById("fi").innerHTML = granTotal;
+            </script>
+
+            <!--want to know why this script is wrong.-->
+            <script>
+                var innertable = document.getElementById("tableorder");
+                var sumVal = 0;
+                for (var i = 3; i < 8; i++) {
+                    sumVal = sumVal + parseFloat(innertable.rows[i].cells[5].innerHTML);
+                }
+                document.getElementById("ff").innerHTML = sumVal;
+            </script>
+            <!--want to know why this script is wrong.-->
 
 
 </body>
+
 </html>
